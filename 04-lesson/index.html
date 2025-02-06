@@ -16,18 +16,26 @@
     <h1>Hello World!</h1>
     <p>This is a paragraph.</p>
 
-    <hr>
+        <!-- This is an internal reference, as it points to somewhere else on the page -->
+    <nav>
+      <ul>
+        <li><a href="#html">Learn HTML</a></li>
+        <li><a href="#lists">Cover Lists</a></li>
+      </ul>
+    </nav>
+
+    <hr />
 
     <h2>This is HTML!</h2>
-    <p>This is also a paragraph.
-      <br>This is a break inside of my paragraph.
-      <br>This is also a break.
+    <p>
+      This is also a paragraph. <br />This is a break inside of my paragraph.
+      <br />This is also a break.
     </p>
 
     <h3>This is a h3!</h3>
     <p>This is also a paragraph aswell.</p>
 
-    <hr>
+    <hr />
 
     <!--
     Notes on different things featured in the body:
@@ -43,13 +51,16 @@
     &gt - adds a greater then arrow.
     &copy - adds the copyright symbol.
     -->
-    <h2>Here is some of what I'll be doing:</h2>
-    <p><em>Ideas:</em>
-      <br>&nbsp;&nbsp;&nbsp;Idea #1.
-      <br><strong>Idea #2.</strong>
-      <br><abbr title="This is an appreviation!">Idea #3.</abbr>
-    </p>
-
+    <section id="html">
+      <h2>Here is some of what I'll be doing:</h2>
+      <p>
+        <em>Ideas:</em> <br />&nbsp;&nbsp;&nbsp;Idea #1. <br /><strong
+          >Idea #2.</strong
+        >
+        <br /><abbr title="This is an appreviation!">Idea #3.</abbr>
+      </p>
+    </section>
+    <section id="lists">
       <!-- lists -->
       <!-- ordered lists come in numerical form, i.e. 1. 2. 3. etc-->
       <ol>
@@ -67,23 +78,32 @@
        <dt> - description title
        <dd> - description details
       -->
-       <h3>Description List Example:</h3>
-       <dl>
+      <h3>Description List Example:</h3>
+      <dl>
         <dt>North Pole</dt>
         <dd>description details.</dd>
 
         <dt>South Pole (dt)</dt>
         <dd>description details pt2.</dd>
-       </dl>
+      </dl>
+    </section>
 
     <p>This next bit is an address:</p>
     <address>This is where I'd write out an address.</address>
 
     <h3>Lets add a link:</h3>
-    <p><abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr></p>
+    <!-- This is an absolute reference, as it points to somewhere else externally -->
+    <p>
+      <abbr title="Mozilla Developer Network"
+        ><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr
+      >
+    </p>
 
-    <hr>
+    <hr />
+    <!-- This is a relative reference, as it points to somewhere else internally -->
     &lt;&lt; &copy; <a href="about.html">Logan Gillett</a> &gt;&gt;
-
+    <p>
+      <a href="#">Back To Top</a>
+    </p>
   </body>
 </html>
