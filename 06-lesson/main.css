@@ -18,3 +18,7 @@ a:visited {
 a:hover, a:active {
     color: #eee;
 }
+
+mark {
+    color:#444;
+}
