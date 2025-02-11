@@ -13,38 +13,40 @@
   </head>
 
   <body>
-    <h1>Hello World!</h1>
-    <p>This is a paragraph.</p>
+    <header>
+      <h1>Hello World!</h1>
 
-    <!-- This is an internal reference, as it points to somewhere else on the page -->
-    <nav>
-      <ul>
-        <li><a href="#html">Learn HTML</a></li>
-        <li><a href="#lists">Cover Lists</a></li>
-      </ul>
-    </nav>
+      <!-- This is an internal reference, as it points to somewhere else on the page -->
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#html">Learn HTML</a></li>
+          <li><a href="#lists">Cover Lists</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section id="html">
+    <main>
+      <article id="html">
+        <hr />
+        <h2>This is HTML!</h2>
+        <img
+          src="img/html_logo_300x300.png"
+          alt="HTML5 Logo"
+          title="This is HTML5!"
+          width="100"
+          height="100"
+        />
+        <p>
+          This is a paragraph. <br />This is a break inside of my paragraph.
+          <br />This is also a break.
+        </p>
+
+        <h3>This is a h3!</h3>
+        <p>This is also a paragraph aswell.</p>
+      </article>
       <hr />
-      <h2>This is HTML!</h2>
-      <img
-        src="img/html_logo_300x300.png"
-        alt="HTML5 Logo"
-        title="This is HTML5!"
-        width="100"
-        height="100"
-      />
-      <p>
-        This is also a paragraph. <br />This is a break inside of my paragraph.
-        <br />This is also a break.
-      </p>
 
-      <h3>This is a h3!</h3>
-      <p>This is also a paragraph aswell.</p>
-    </section>
-    <hr />
-
-    <!--
+      <!--
     Notes on different things featured in the body:
     hr - adds a horizontal line / break, commonly called the "horizontal rule".
     br - adds a break / new line.
@@ -58,83 +60,84 @@
     &gt - adds a greater then arrow.
     &copy - adds the copyright symbol.
     -->
-    <section id="ideas">
-      <h2>Here is some of what I'll be doing:</h2>
-      <p>
-        <em>Ideas:</em> <br />&nbsp;&nbsp;&nbsp;Idea #1. <br /><strong
-          >Idea #2.</strong>
-        <br /><abbr title="This is an appreviation!">Idea #3.</abbr>
-      </p>
-    </section>
-    <section id="lists">
-      <!-- lists -->
-      <!-- ordered lists come in numerical form, i.e. 1. 2. 3. etc-->
-      <ol>
-        <li>...List item #1</li>
-        <li>...List item #2</li>
-        <li>...List item #3</li>
-      </ol>
-      <!-- unordered lists come in dot form -->
-      <ul>
-        <li>...Unordered List item #1</li>
-        <li>...Unordered List item #2</li>
-        <li>...Unordered List item #3</li>
-      </ul>
-      <!-- description list has two elements
+      <article id="ideas">
+        <h2>Here is some of what I'll be doing:</h2>
+        <p>
+          <em>Ideas:</em> <br />&nbsp;&nbsp;&nbsp;Idea #1. <br /><strong
+            >Idea #2.</strong
+          >
+          <br /><abbr title="This is an appreviation!">Idea #3.</abbr>
+        </p>
+      </article>
+      <section id="lists">
+        <!-- lists -->
+        <!-- ordered lists come in numerical form, i.e. 1. 2. 3. etc-->
+        <ol>
+          <li>...List item #1</li>
+          <li>...List item #2</li>
+          <li>...List item #3</li>
+        </ol>
+        <!-- unordered lists come in dot form -->
+        <ul>
+          <li>...Unordered List item #1</li>
+          <li>...Unordered List item #2</li>
+          <li>...Unordered List item #3</li>
+        </ul>
+        <!-- description list has two elements
        <dt> - description title
        <dd> - description details
       -->
-      <h3>Description List Example:</h3>
-      <dl>
-        <dt>North Pole</dt>
-        <dd>description details.</dd>
+        <h3>Description List Example:</h3>
+        <dl>
+          <dt>North Pole</dt>
+          <dd>description details.</dd>
 
-        <dt>South Pole (dt)</dt>
-        <dd>description details pt2.</dd>
-      </dl>
-    </section>
+          <dt>South Pole (dt)</dt>
+          <dd>description details pt2.</dd>
+        </dl>
+      </section>
 
-    <p>This next bit is an address:</p>
-    <address>This is where I'd write out an address.</address>
+      <p>This next bit is an address:</p>
+      <address>This is where I'd write out an address.</address>
 
-    <!--When adding the loading atribute, there is "eager", which is default, and "lazy" which saves memory when off screen -->
-    <figure>
-      <img
-      src="img/caribbean.jpg"
-      alt="Caribbean Beach"
-      title="Caribbean Beach"
-      width="400"
-      height="255"
-      loading="lazy"
-    />
-      <figcaption>
-        Caribbean Beach Getaway
-      </figcaption>
-    </figure>
+      <!--When adding the loading atribute, there is "eager", which is default, and "lazy" which saves memory when off screen -->
+      <figure>
+        <img
+          src="img/caribbean.jpg"
+          alt="Caribbean Beach"
+          title="Caribbean Beach"
+          width="400"
+          height="255"
+          loading="lazy"
+        />
+        <figcaption>Caribbean Beach Getaway</figcaption>
+      </figure>
 
-    <h3>Lets add a link:</h3>
-    <!-- This is an absolute reference, as it points to somewhere else externally -->
-    <p>
-      <abbr title="Mozilla Developer Network"
-        ><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr
-      >
-    </p>
-
-    <figure>
-      <figcaption>Here is an example of displaying code using figures:</figcaption>
+      <h3>Lets add a link:</h3>
+      <!-- This is an absolute reference, as it points to somewhere else externally -->
       <p>
-        <code>
-          &lt;h1&gt;Hello World!&lt;/h1&gt;
-        </code>
+        <abbr title="Mozilla Developer Network"
+          ><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr
+        >
       </p>
-    </figure>
 
-    <hr />
-    <!-- This is a relative reference, as it points to somewhere else internally -->
-    &lt;&lt; &copy; <a href="about.html">Logan Gillett</a> &gt;&gt;
-    <p>
-      <a href="#">Back To Top</a>
-    </p>
+      <figure>
+        <figcaption>
+          Here is an example of displaying code using figures:
+        </figcaption>
+        <p>
+          <code> &lt;h1&gt;Hello World!&lt;/h1&gt; </code>
+        </p>
+      </figure>
+    </main>
 
-    </body>
+    <footer>
+      <hr />
+      <!-- This is a relative reference, as it points to somewhere else internally -->
+      &lt;&lt; &copy; <a href="about.html">Logan Gillett</a> &gt;&gt;
+      <p>
+        <a href="#">Back To Top</a>
+      </p>
+    </footer>
+  </body>
 </html>
