@@ -1,0 +1,19 @@
+Some notes about page layout and where to collect images:
+
+The page that users can see follow similar naming conventions to that of newspapers:
+The "Crease" is the area at the bottom of screen.
+The "Fold" is the area of screen, i.e. the part folded so that you can't see it.
+
+Images and Loading:
+The loading attribute in an image is used to help with performance,
+use lazy when it is about to show an image beyond the fold.
+
+Here are some resources for finding & Using images:
+- Use Placeholder Images
+
+For finding copyright-free images:
+- unsplash.com
+- pexels.com
+- gratisography.com
+- pixabay.com
+
