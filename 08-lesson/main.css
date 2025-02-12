@@ -29,3 +29,54 @@ table, tr, th, td, caption {
     border-collapse: collapse;
     padding: 0.5rem;
 }
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  header h1 {
+    font-size: 24px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+
+/* Tablet styles */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  header h1 {
+    font-size: 28px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+  body {
+    font-size: 18px;
+  }
+  header h1 {
+    font-size: 32px;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+  }
+  nav ul li {
+    margin-right: 30px;
+  }
+}
