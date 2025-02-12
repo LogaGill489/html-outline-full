@@ -189,9 +189,11 @@
               </tr>
             </tbody>
             <tfoot>
-                <tr>
-                    <td colspan="2">Here is 'my' schedule I definately do every day.</td>
-                </tr>
+              <tr>
+                <td colspan="2">
+                  Here is 'my' schedule I definately do every day.
+                </td>
+              </tr>
             </tfoot>
           </table>
 
@@ -219,7 +221,7 @@
         </section>
       </article>
 
-      <hr>
+      <hr />
 
       <article id="contact">
         <h2>Contact Me</h2>
@@ -234,11 +236,11 @@
               type="text"
               id="firstName"
               name="firstName"
-              placeholder= "First Name"
-              autocomplete= "on"
+              placeholder="First Name"
+              autocomplete="on"
               required
               autofocus
-            >
+            />
           </p>
           <p>
             <label for="lastName">Last Name:</label>
@@ -246,10 +248,10 @@
               type="text"
               id="lastName"
               name="lastName"
-              placeholder= "Last Name"
-              autocomplete= "on"
+              placeholder="Last Name"
+              autocomplete="on"
               required
-            >
+            />
           </p>
           <p>
             <label for="email">Email:</label>
@@ -257,20 +259,67 @@
               type="email"
               id="email"
               name="email"
-              placeholder= "Email"
-              autocomplete= "on"
+              placeholder="Email"
+              autocomplete="on"
               required
-            >
+            />
           </p>
           <p>
             <label for="message">Message:</label>
             <textarea
               id="message"
               name="message"
-              placeholder= "Message"
-              autocomplete= "on"
+              placeholder="Message"
+              autocomplete="on"
               required
             ></textarea>
+          </p>
+          <p>
+            <label for="phone">Phone</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="555-555-5555"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              autocomplete="on"
+              required
+            />
+          </p>
+          <p>
+            <label for="decade">Favourite Decade:</label>
+            <input
+              type="number"
+              name="decade"
+              placeholder="1900"
+              id="decade"
+              min="1900"
+              max="2099"
+              step="10"
+              required
+            />
+          </p>
+          <p>
+            <label for="coffee">Favourite Coffee:</label>
+            <select name="coffee" id="coffee">
+              <option value="none">Select a Coffee</option>
+              <option value="black">Black</option>
+              <option value="latte">Latte</option>
+              <option value="iced coffee">Iced Coffee</option>
+              <option value="cappuccino">Cappuccino</option>
+              <option value="espresso">Espresso</option>
+            </select>
+          </p>
+          <p>
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              autocomplete="on"
+              required
+            />
           </p>
           <p>
             <button type="submit">Send</button>
